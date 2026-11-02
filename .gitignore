@@ -1,0 +1,18 @@
+# Build output
+build/
+*.exe
+*.obj
+*.pdb
+
+# Test jars contain real cheat/malware samples and third-party mods - never publish them
+testjars/
+
+# Dear ImGui: keep only the sources the build uses (plus its license)
+third_party/imgui/*
+!third_party/imgui/LICENSE.txt
+!third_party/imgui/*.h
+!third_party/imgui/*.cpp
+!third_party/imgui/backends/
+third_party/imgui/backends/*
+!third_party/imgui/backends/imgui_impl_win32.*
+!third_party/imgui/backends/imgui_impl_dx11.*
